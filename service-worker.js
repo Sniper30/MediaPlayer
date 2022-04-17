@@ -29,7 +29,10 @@ self.addEventListener('activate',(event) => {
     //para que no hallan dos caches con las mismas similitudes
    var response = caches.keys().then(cachesNames =>{
       for(cache of cachesNames){
-         if(cache.toLowerCase().includes('static') && cache !==  CACHE_STATIC) return caches.delete(cache) 
+         if(cache.toLowerCase().includes('static') && cache !==  CACHE_STATIC){
+             console.log("caches: ",cache)
+            return caches.delete(cache) 
+         }
       }
    });
    event.waitUntil(response)
