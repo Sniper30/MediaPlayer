@@ -10,7 +10,7 @@ var ArrayInstall =[
     "plugins/autoPause.js",
     "plugins/autoPlay.js",
     "img/windows-lhDjusLtpP4-unsplash.jpeg",
-    "mediaPlayer.js"
+    "MediaPlayer.js"
 
 ]
 
