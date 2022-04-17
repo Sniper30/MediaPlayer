@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     var url = location.href;
     var sw;
     if(url.includes('127.0.0.1') || url.includes('localhost')) sw = "./service-worker.js";
-    else sw = 'MediaPlayer/service-worker.js';
+    else sw = '/MediaPlayer/service-worker.js';
 
     console.log("url: ",url,"path sw: ",sw)
 
