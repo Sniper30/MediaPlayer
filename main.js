@@ -14,9 +14,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("pause").onclick = () => player.pause();
 
+    var url = location.href;
+    var sw;
+    if(url.includes('127.0.0.1') || url.includes('localhost')) sw = "./service-worker.js";
+    else sw = 'MediaPlayer/service-worker.js';
+
+    console.log("url: ",url,"path sw: ",sw)
 
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./service-worker.js').then((register)=>{
+      navigator.serviceWorker.register(sw).then((register)=>{
             console.log('Registration successful: ', register.scope);
       }).catch(err => console.log("error: ",err.message));
     }
