@@ -2,15 +2,15 @@ var CACHE_STATIC = 'Static-v4';
 var CACHE_DYNAMIC = 'Dynamic-v1';
 
 var ArrayInstall =[
-    './',
-    './main.css',
-    './main.js',
+    // './',
+    'main.css',
+    'main.js',
     'offline.html',
     "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/r9E0QYuleiv25jmq9/videoblocks-the-man-standing-on-the-mountain-against-the-beautiful-sunset_binzdmw6e__5e1451f8f3f1d68df8371a20d1681d64__P360.mp4",
-    "./plugins/autoPause.js",
-    "./plugins/autoPlay.js",
-    "./img/windows-lhDjusLtpP4-unsplash.jpeg",
-    "./mediaPlayer.js"
+    "plugins/autoPause.js",
+    "plugins/autoPlay.js",
+    "img/windows-lhDjusLtpP4-unsplash.jpeg",
+    "mediaPlayer.js"
 
 ]
 
@@ -32,7 +32,6 @@ self.addEventListener('activate',(event) => {
 })
 
 self.addEventListener('fetch',function(event) {
-    if(event.request.url.includes("livereload.js")) return
     var req = event.request;
     event.respondWith(RespondCacheFirst(req));
     
