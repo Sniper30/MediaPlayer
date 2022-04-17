@@ -14,9 +14,13 @@ var ArrayInstall =[
 
 ]
 
+function ErrorHandler(error){
+    console.log(error.message)
+}
+
 self.addEventListener('install',function(event) {
     //aqui va a instalar todo lo que mi app necesita para subsistir sin internet
-    var instalacion = caches.open(CACHE_STATIC).then(cache => cache.addAll(ArrayInstall))
+    var instalacion = caches.open(CACHE_STATIC).then(cache => cache.addAll(ArrayInstall)).catch(error => ErrorHandler(error));
     event.waitUntil(instalacion)
 });
 
