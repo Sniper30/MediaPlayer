@@ -1,4 +1,4 @@
-var CACHE_STATIC = 'Static-v4';
+var CACHE_STATIC = 'Static-v5';
 var CACHE_DYNAMIC = 'Dynamic-v1';
 
 var ArrayInstall =[
