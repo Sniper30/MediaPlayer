@@ -1,0 +1,56 @@
+html{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+body{
+    background-color:#000;
+}
+div#ContainerAll{
+    text-align:center;
+    align-items:center;
+}
+
+div#ContainerAll header{
+    background-color:aliceblue;
+    padding:20px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 43px -18px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 1px 43px -18px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 43px -18px rgba(0,0,0,0.75);
+}
+div#ContainerAll header div p{
+    text-align:center;
+
+}
+div#ContainerAll div.container{
+    width: 100%;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+}
+div#ContainerAll div.container div{
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    gap: 10px;
+}
+div#ContainerAll div.container video{
+    width:100%;
+}
+div#ContainerAll p{
+    padding:15px;
+    margin: 10px 0;
+    text-align:start;
+    background-color:orange;
+}
+img{
+    width:50%;
+}
