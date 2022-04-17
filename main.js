@@ -1,6 +1,6 @@
 import AutoPlay from "./plugins/autoPlay.js";
 import AutoPause from './plugins/autoPause.js';
-import MediaPlayer from "./mediaPlayer.js";
+import MediaPlayer from "mediaPlayer.js";
 
 
 
