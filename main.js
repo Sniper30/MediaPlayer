@@ -3,7 +3,7 @@ import AutoPause from './plugins/autoPause.js';
 import MediaPlayer from "./MediaPlayer.js";
 
 
-
+//aqui-1
 
 document.addEventListener("DOMContentLoaded", () => {
 
