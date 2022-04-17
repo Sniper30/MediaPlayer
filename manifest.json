@@ -16,7 +16,6 @@
     "start_url": "/",
     "background_color": "#000000",
     "display": "standalone",
-    "scope": "https://sniper30.github.io/MediaPlayer/",
     "theme_color": "#3367D6",
     "description": "Weather forecast information"
   }
